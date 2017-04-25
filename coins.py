@@ -29,11 +29,11 @@ import csv
 # USE YOUR OWN TWITTER TOKENS PLEASE NOT MINE
 # http://apps.twitter.com TO REGISTER FOR TOKEN DONT USE MINE !
 
-consumer_key= 'U7sIKGN9Ntk317ox9XKbpNErP' 
-consumer_secret= 'ZBS2uR0n2YjbBU6wo1NTchTT6Ly1C0i6qLci5ppTLYa8rTiKmd'
+consumer_key= '' 
+consumer_secret= ''
 
-access_token='845221449589669888-vKZ8NcV1lCCzRZhCboGV3cOZGEjv6cj'
-access_token_secret='OrvSrEdRfNduyj2mK3EomwsVj5xbRpc9ZVDTq2GqCYsWf'
+access_token=''
+access_token_secret=''
 
 # We set the above varibles to our API keys from TWITTER
 # Below we use the TWEEYP libary we imported to auth to twitter API
