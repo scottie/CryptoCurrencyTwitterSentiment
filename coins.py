@@ -24,6 +24,7 @@ import tweepy
 from textblob import TextBlob
 import sys
 import csv
+from fake_useragent import UserAgent
 
 #Authenticate / Digital login to twitter
 # USE YOUR OWN TWITTER TOKENS PLEASE NOT MINE
@@ -45,8 +46,10 @@ api = tweepy.API(auth)
 url = 'http://cryptrader.com/W/tweets' # They try stop us using it so we spoof our user agent below
 #Picking random useragent / telling user and setting below to use
 print("Grabing a random useragent from random useragent API....")
-userAgent = requests.get("http://labs.wis.nu/ua/") # grab the page / html
-randuserAgent = str(userAgent.content).replace('{',"").replace('}',"").replace('"ua"',"").replace("b':","").replace('"',"").replace("'","") # clean string, lol.... json...
+
+# get a random user agent
+randuserAgent = UserAgent(verify_ssl=False).random
+
 print(randuserAgent)#
 #
 headers = {'User-Agent': randuserAgent} # spoof user agent to stop the block 
